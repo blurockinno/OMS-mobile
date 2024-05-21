@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">oms.dgcaters</string>
+    <string name="title_order">Order</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_purchase">Purchase</string>
+    <string name="title_customer">Customer</string>
+    <string name="title_inventory">Inventory</string>
+    <string name="title_recipe">Recipe</string>
+</resources>

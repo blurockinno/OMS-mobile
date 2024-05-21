@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Omsdgcaters" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#616161</item> <!-- Gray 500 -->
+        <item name="colorPrimaryVariant">#616161</item> <!-- Gray 700 -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White -->
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#BDBDBD</item> <!-- Gray 400 -->
+        <item name="colorSecondaryVariant">#757575</item> <!-- Gray 600 -->
+        <item name="colorOnSecondary">#000000</item> <!-- Black -->
+
+        <!-- Background color. -->
+        <item name="android:colorBackground">#F5F5F5</item> <!-- Gray 100 -->
+        <item name="colorOnBackground">#212121</item> <!-- Gray 900 -->
+
+        <!-- Surface color. -->
+        <item name="colorSurface">#FAFAFA</item> <!-- Gray 50 -->
+        <item name="colorOnSurface">#212121</item> <!-- Gray 900 -->
+
+        <!-- Error color. -->
+        <item name="colorError">#CF6679</item>
+        <item name="colorOnError">#FFFFFF</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#616161</item> <!-- Gray 700 -->
+
+        <!-- Navigation bar color. -->
+        <item name="android:navigationBarColor">#ffffff</item> <!-- Gray 500 -->
+
+        <!-- Customize your theme here. -->
+        <!-- For example, Toolbar color. -->
+        <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar</item>
+    </style>
+</resources>
