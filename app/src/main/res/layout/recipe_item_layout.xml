@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:background="@drawable/backround_feature"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Recipe Name -->
+    <TextView
+        android:id="@+id/recipe_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="start"
+        android:text="Recipe Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Recipe Type -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="Recipe Type"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Recipe Id -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Recipe Id"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Action -->
+    <ImageButton
+        android:id="@+id/btn_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:src="@drawable/edit"
+        android:background="@null"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
