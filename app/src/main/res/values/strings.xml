@@ -6,4 +6,10 @@
     <string name="title_customer">Customer</string>
     <string name="title_inventory">Inventory</string>
     <string name="title_recipe">Recipe</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_manage_user">Manage User</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_privacy_policy">Privacy and Policy</string>
+    <string name="title_term_condition">Term and Conditions</string>
+    <string name="title_add_new_inventory">Add New Item</string>
 </resources>
