@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="5dp"
     android:orientation="vertical"
+    android:paddingTop="10dp"
     android:background="@drawable/backround_feature"
-    android:padding="10dp">
+    android:layout_marginBottom="2dp"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,5 +58,11 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="#C1C1C1"/>
 
 </LinearLayout>
