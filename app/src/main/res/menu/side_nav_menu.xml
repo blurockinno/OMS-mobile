@@ -5,19 +5,24 @@
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_dashboard" />
     <item
-        android:id="@+id/navigation_inventory"
-        android:icon="@drawable/ic_inventory"
-        android:title="@string/title_inventory" />
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/account_circle"
+        android:title="@string/title_profile" />
     <item
-        android:id="@+id/navigation_recipe"
-        android:icon="@drawable/ic_restaurant"
-        android:title="@string/title_recipe" />
+        android:id="@+id/navigation_manage_user"
+        android:icon="@drawable/manage_accounts"
+        android:title="@string/title_manage_user" />
+
     <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_order"
-        android:title="@string/title_order" />
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/settings"
+        android:title="@string/title_setting" />
     <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_shopping_bag"
-        android:title="@string/title_purchase" />
+        android:id="@+id/navigation_privacy_policy"
+        android:icon="@drawable/privacynpolicy"
+        android:title="@string/title_privacy_policy" />
+    <item
+        android:id="@+id/navigation_term_conditions"
+        android:icon="@drawable/termsncondition"
+        android:title="@string/title_term_condition" />
 </menu>

@@ -12,10 +12,44 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.example.omsdgcaters.ui.setting.SettingFragment"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/navigation_manage_user"
+        android:name="com.example.omsdgcaters.ui.manage_user.ManageUserFragment"
+        android:label="@string/title_manage_user"
+        tools:layout="@layout/fragment_manage_user" />
+
+    <fragment
+        android:id="@+id/navigation_privacy_policy"
+        android:name="com.example.omsdgcaters.ui.privacy_policy.PrivacyAndPolicyFragment"
+        android:label="@string/title_privacy_policy"
+        tools:layout="@layout/fragment_privacy_and_policy" />
+
+    <fragment
+        android:id="@+id/navigation_term_conditions"
+        android:name="com.example.omsdgcaters.ui.term_conditions.TermAndConditionFragment"
+        android:label="@string/title_term_condition"
+        tools:layout="@layout/fragment_term_and_condition" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.omsdgcaters.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
         android:id="@+id/navigation_inventory"
         android:name="com.example.omsdgcaters.ui.inventory.InventoryFragment"
         android:label="@string/title_inventory"
-        tools:layout="@layout/fragment_inventory" />
+        tools:layout="@layout/fragment_inventory" >
+        <action
+            android:id="@+id/action_add_new_inventory"
+            app:destination="@id/navigation_add_new_inventory"/>
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_recipe"
@@ -39,4 +73,10 @@
         android:name="com.example.omsdgcaters.ui.customer.CustomerFragment"
         android:label="@string/title_customer"
         tools:layout="@layout/fragment_customer" />
+
+    <fragment
+        android:id="@+id/navigation_add_new_inventory"
+        android:name="com.example.omsdgcaters.ui.inventory.AddNewInventory"
+        android:label="@string/title_add_new_inventory"
+        tools:layout="@layout/fragment_add_new_inventory" />
 </navigation>

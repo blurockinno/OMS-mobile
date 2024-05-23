@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.inventory.AddNewInventory">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/background_border"
+            android:elevation="4dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="?attr/colorSurface"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4">
+
+            <TextView
+                android:id="@+id/label_item_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Item Name"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/input_item_name"/>
+
+            <EditText
+                android:id="@+id/input_item_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="Enter item name"
+                android:background="@drawable/edit_text_border"
+                android:padding="8dp"
+                app:layout_constraintStart_toEndOf="@+id/label_item_name"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.6"/>
+
+            <TextView
+                android:id="@+id/label_item_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Choose item category"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_item_name"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/input_item_category"/>
+
+            <Spinner
+                android:id="@+id/input_item_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_border"
+                android:padding="8dp"
+                app:layout_constraintStart_toEndOf="@+id/label_item_category"
+                app:layout_constraintTop_toBottomOf="@+id/input_item_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.6"/>
+
+            <TextView
+                android:id="@+id/label_item_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_item_category"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/input_item_quantity"/>
+
+            <EditText
+                android:id="@+id/input_item_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Enter quantity"
+                android:background="@drawable/edit_text_border"
+                android:padding="8dp"
+                app:layout_constraintStart_toEndOf="@+id/label_item_quantity"
+                app:layout_constraintTop_toBottomOf="@+id/input_item_category"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.6"/>
+
+            <TextView
+                android:id="@+id/label_item_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_item_quantity"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/input_item_size"/>
+
+            <EditText
+                android:id="@+id/input_item_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Enter size"
+                android:background="@drawable/edit_text_border"
+                android:padding="8dp"
+                app:layout_constraintStart_toEndOf="@+id/label_item_size"
+                app:layout_constraintTop_toBottomOf="@+id/input_item_quantity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.6"/>
+
+            <CheckBox
+                android:id="@+id/input_is_consumable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is it consumable?"
+                android:layout_marginTop="16dp"
+                android:buttonTint="#3b0764"
+                app:layout_constraintTop_toBottomOf="@+id/input_item_size"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:backgroundTint="#3b0764"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/input_is_consumable"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:backgroundTint="#3b0764"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/input_is_consumable"
+                app:layout_constraintEnd_toStartOf="@+id/btn_add"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
