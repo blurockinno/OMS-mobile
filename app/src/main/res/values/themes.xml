@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Omsdgcaters" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#616161</item> <!-- Gray 500 -->
+        <item name="colorPrimary">#3b0764</item> <!-- Gray 500 -->
         <item name="colorPrimaryVariant">#616161</item> <!-- Gray 700 -->
         <item name="colorOnPrimary">#FFFFFF</item> <!-- White -->
 
@@ -24,7 +24,7 @@
         <item name="colorOnError">#FFFFFF</item>
 
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">#616161</item> <!-- Gray 700 -->
+        <item name="android:statusBarColor">#3b0764</item> <!-- Gray 700 -->
 
         <!-- Navigation bar color. -->
         <item name="android:navigationBarColor">#ffffff</item> <!-- Gray 500 -->
