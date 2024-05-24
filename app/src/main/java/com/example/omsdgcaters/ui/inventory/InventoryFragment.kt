@@ -4,7 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import android.widget.ImageButton
+import android.widget.LinearLayout
+import android.widget.PopupWindow
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -52,6 +55,34 @@ class InventoryFragment : Fragment() {
         btnAddInventory.setOnClickListener {
             findNavController().navigate(R.id.action_add_new_inventory)
         }
+
+        //handle for filter button
+        val popupView =  layoutInflater.inflate(R.layout.popup_filter_categories_for_inventoy, null)
+        val popupWindow =  PopupWindow(popupView, LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
+
+        val btnFilter =  binding.btnFilter
+        var isPopupWindowShowing = false
+
+        btnFilter.setOnClickListener {
+            if (isPopupWindowShowing) {
+                popupWindow.dismiss()
+            } else {
+                popupWindow.showAsDropDown(btnFilter)
+            }
+            isPopupWindowShowing = !isPopupWindowShowing
+        }
+
+        val filterCategory1 = popupView.findViewById<TextView>(R.id.filter_category1)
+        val filterCategory2 = popupView.findViewById<TextView>(R.id.filter_category2)
+
+        // Example of applying filter when a checkbox is selected
+        filterCategory1.setOnClickListener {
+            // Apply filter if isChecked is true
+        }
+        filterCategory2.setOnClickListener {
+            // Apply filter if isChecked is true
+        }
+
 
         return root
     }
