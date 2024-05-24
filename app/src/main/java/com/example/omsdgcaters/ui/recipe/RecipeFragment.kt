@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.omsdgcaters.R
@@ -39,7 +40,11 @@ class RecipeFragment : Fragment() {
         adapter = RecipeAdapter(getRecipeList()) // Initialize adapter with an empty list initially
         recyclerView.adapter = adapter
 
-        // Observe recipe data from ViewModel
+        // navigate to add new recipe
+        val btnAddNewRecipe = binding.btnAddRecipe
+        btnAddNewRecipe.setOnClickListener {
+            findNavController().navigate(R.id.action_add_new_recipe)
+        }
 
 
 

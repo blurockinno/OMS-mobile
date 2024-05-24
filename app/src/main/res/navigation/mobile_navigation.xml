@@ -55,7 +55,11 @@
         android:id="@+id/navigation_recipe"
         android:name="com.example.omsdgcaters.ui.recipe.RecipeFragment"
         android:label="@string/title_recipe"
-        tools:layout="@layout/fragment_recipe" />
+        tools:layout="@layout/fragment_recipe" >
+        <action
+            android:id="@+id/action_add_new_recipe"
+            app:destination="@id/navigation_add_new_recipe"/>
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_home"
@@ -79,4 +83,10 @@
         android:name="com.example.omsdgcaters.ui.inventory.AddNewInventory"
         android:label="@string/title_add_new_inventory"
         tools:layout="@layout/fragment_add_new_inventory" />
+
+    <fragment
+        android:id="@+id/navigation_add_new_recipe"
+        android:name="com.example.omsdgcaters.ui.recipe.AddNewRecipe"
+        android:label="@string/title_add_new_inventory"
+        tools:layout="@layout/fragment_add_new_recipe" />
 </navigation>
