@@ -51,7 +51,8 @@ class InventoryFragment : Fragment() {
 //            textView.text = it
 //        }
 
-         btnAddInventory =  binding.btnAddItem
+        //navigate to add new inventory fragment
+        btnAddInventory =  binding.btnAddItem
         btnAddInventory.setOnClickListener {
             findNavController().navigate(R.id.action_add_new_inventory)
         }
